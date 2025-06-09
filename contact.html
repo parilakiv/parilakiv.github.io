@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NVIDIA - Kontakt</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="NVIDIA Logo">
+        </a>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Úvod</a></li>
+                <li><a href="products.html">Produkty</a></li>
+                <li><a href="about.html">O nás</a></li>
+                <li><a href="contact.html" class="active">Kontakt</a></li>
+            </ul>
+        </nav>
+        <button id="mobile-menu-btn">☰</button>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="contact-header">
+                <h1>Kontaktujte nás</h1>
+                <p>Máte otázky? Sme tu pre vás. Vyplňte formulár a my sa vám čoskoro ozveme.</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h3>Adresa</h3>
+                        <p>NVIDIA Corporation<br>2788 San Tomas Expressway<br>Santa Clara, CA 95051</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <h3>Telefón</h3>
+                        <p>+1 (408) 486-2000</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">✉️</div>
+                        <h3>Email</h3>
+                        <p>info@nvidia.com</p>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Meno:*</label>
+                        <input type="text" id="name" required minlength="5" maxlength="128" 
+                               placeholder="Zadajte vaše meno (min. 5 znakov)">
+                        <span class="form-error" id="name-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:*</label>
+                        <input type="email" id="email" required maxlength="256"
+                               placeholder="vas@email.sk">
+                        <span class="form-error" id="email-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefón:</label>
+                        <input type="tel" id="phone" minlength="7"
+                               placeholder="+421 XXX XXX XXX">
+                        <span class="form-error" id="phone-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Predmet:*</label>
+                        <input type="text" id="subject" required minlength="3" maxlength="128"
+                               placeholder="Predmet správy (min. 3 znaky)">
+                        <span class="form-error" id="subject-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Správa:*</label>
+                        <textarea id="message" required minlength="5" rows="5"
+                                  placeholder="Vaša správa (min. 5 znakov)"></textarea>
+                        <span class="form-error" id="message-error"></span>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Odoslať správu</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>O spoločnosti</h3>
+                <p>NVIDIA je svetový líder v oblasti GPU technológií a umelej inteligencie.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Rýchle odkazy</h3>
+                <ul>
+                    <li><a href="#">Kariéra</a></li>
+                    <li><a href="#">Podpora</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Sledujte nás</h3>
+                <div class="social-links">
+                    <a href="https://facebook.com/NVIDIA" class="social-link" target="_blank" rel="noopener">
+                        <img src="images/icons/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com/nvidia" class="social-link" target="_blank" rel="noopener">
+                        <img src="images/icons/twitter.svg" alt="Twitter">
+                    </a>
+                    <a href="https://www.linkedin.com/company/nvidia" class="social-link" target="_blank" rel="noopener">
+                        <img src="images/icons/linkedin.svg" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.instagram.com/nvidia" class="social-link" target="_blank" rel="noopener">
+                        <img src="images/icons/instagram.svg" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 NVIDIA | Adrián Pariľák</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
